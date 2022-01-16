@@ -1,110 +1,109 @@
-FORTRAN¦FORTRANG¦FORTRANH - Call the IBM MVT Fortran Compilers         MODULES
+FORTRAN ¦ FORTRANG ¦ FORTRANH                                           MODULES
  
-    Use the FORTRANG & FORTRANH commands to invoke the OS FORTRAN Compliers.
-    Then use the LOAD and START commands to run the programs.
-    The format of the commands are:-
- 
-    +----------------+-------------------------------------------------------+
-    |  FORTRAN{G¦H}  |  filename  ( options                                  |
-    |                |                                                       |
-    |                |  DIsk¦PRint¦NOPRint        EBCDIC¦BCD    ID¦NOID      |
-    |                |  LINECNT(60)¦LINECNT(NN)   LOAD¦NOLOAD   MAP¦NOMAP    |
-    |                |  NAME(MAIN)¦NAME(XXXXXXXX) NODECK¦DECK   NOEDIT¦EDIT* |
-    |                |  NOID¦ID     NOLIST¦LIST   NOXL¦XL *     NOXREF¦XREF* |
-    |                |  OPT(0)¦OPT(1)¦OPT(2)*                                |
-    |                |  SIZE(0000K)¦SIZE(NNNNNNNN)¦SIZE(NNNNK)*              |
-    |                |  SOURCE¦NOSOURCE*         TRACE(0)¦TRACE(nnnn)*       |
-    +----------------+-------------------------------------------------------+
- 
-   Options:-
- 
- 
-   * - Option only available with FORTRANH
- 
-Where:-
+Use the FORTRANG & FORTRANH commands to invoke the OS FORTRAN Compliers. Then
+use the LOAD and START commands to run the programs.
++----------------+------------------------------------------------------------+
+|  FORTRAN[G¦H]  |  filename  ( options                                       |
+|                |                                                            |
+|                |  DIsk¦PRint¦NOPRint        EBCDIC¦BCD    ID¦NOID           |
+|                |  LINECNT(60)¦LINECNT(NN)   LOAD¦NOLOAD   MAP¦NOMAP         |
+|                |  NAME(MAIN)¦NAME(XXXXXXXX) NODECK¦DECK   NOEDIT¦EDIT*      |
+|                |  NOID¦ID     NOLIST¦LIST   NOXL¦XL*      NOXREF¦XREF*      |
+|                |  OPT(0)¦OPT(1)¦OPT(2)*                                     |
+|                |  SIZE(0000K)¦SIZE(NNNNNNNN)¦SIZE(NNNNK)*                   |
+|                |  SOURCE¦NOSOURCE*         TRACE(0)¦TRACE(nnnn)*            |
+|                | * - Option only available with FORTRANH                    |
++----------------+------------------------------------------------------------+
+Where:
  
 FORTRAN<G¦H>
-    Controls which compiler is invoked. FORTRAN with no suffix invokes
-    Fortran G.
+         controls which compiler is invoked. FORTRAN with no suffix invokes
+         Fortran G.
  
-filename
-    the name of the file to be compiled. The filetype must be
-    FORTRAN and it must have fixed length 80 byte records.
+filename the name of the file to be compiled. The filetype must be
+         FORTRAN and it must have fixed length 80 byte records.
  
-DIsk¦PRint¦NOPRint
-    Specifies where to write the Compiler listing.
-        DIsk     - as <Filename> LISTING on the "A" disk.
-        PRint    - To the users virtual printer.
-        NOPRint  - Do not write a listing file.
+Options:
+ 
+DIsk
+          writes the complier listing as <Filename> LISTING on the "A" disk.
+PRint
+          writes to the users virtual printer.
+NOPRint
+          do not write a listing file.
  
 EBCDIC¦BCD
-    Allows the reading of a program in EBCDIC or BCD code. Default is EBCDIC.
+          allows the reading of a program in EBCDIC or BCD code. The default
+          is EBCDIC.
  
 ID¦NOID
-    ID specifies that internal sequence numbers will be generated.
-    These can be used by the run time library to annotate errors.
-    The default is NOID.
+          ID specifies that internal sequence numbers will be generated. These
+          can be used by the run time library to annotate errors. The default
+          is NOID.
  
 LINECNT(NN)
-    Specify the lines per page on the lisiting. The default is 66.
+          specify the lines per page on the lisiting. The default is 66.
  
 LOAD¦NOLOAD
-    Controls OBJECT file generation. Default is LOAD.
+          controls OBJECT file generation. Default is LOAD.
  
 MAP¦NOMAP
-    Controls inclusing of Storage map in listing. Default is NOMAP
+          controls inclusing of Storage map in listing. Default is NOMAP
  
 NAME(XXXXXXXX)
-    Alocates a name to the MAIN program. Default MAIN.
+          alocates a name to the MAIN program. Default MAIN.
  
 NODECK¦DECK
-    Controls the punching of the object code. If DECK is specified an OBJECT
-    deck is punched. Default is NODECK.
+          controls the punching of the object code. If DECK is specified an
+          OBJECT deck is punched. Default is NODECK.
  
 NOEDIT¦EDIT*
-    Writes an editing listing. Requires OPT(2)
+          writes an editing listing. Requires OPT(2). Fortran H only.
  
 NOLIST¦LIST
-    Include the Source Code in the Listing file. Default is LIST.
+          include the Source Code in the Listing file. Default is LIST.
  
-NOXL¦XL *
-    Enables some Extended Language facilites as described in GY28-6642. H Only.
+NOXL¦XL*
+          enables some Extended Language facilites as described in GY28-6642.
+          Fortran H only.
  
-NOXREF¦XREF *
-    Includes a cross reference in the listing. The default is NOXREF. H Only.
+NOXREF¦XREF*
+          includes a cross reference in the listing. The default is NOXREF.
+          Fortran H only.
  
 OPT(0)¦OPT(1)¦OPT(2)*
-     Set the Optimization level. H-Only
+          set the Optimization level. Fortran H only.
  
 SIZE(0K)¦SIZE(N)¦SIZE(K)*
-     Set the Storage used by the compiler. Generally not usefull. H Only.
+          set the Storage used by the compiler. Generally not usefull. H Only.
+          Fortran H only.
  
-SOURCE¦NOSOURC *
-     Include a copy of the source in the listing. The default is SOURCE. H Only
+SOURCE¦NOSOURC*
+          include a copy of the source in the listing. The default is SOURCE.
+          Fortran H only.
  
 TRACE(0)¦TRACE(nnnn)*
-    Only for debugging the compiler. H Only
+          only for debugging the compiler. Fortran H only.
  
-Usage Notes
-===========
+Usage Notes:
  
 1.  These are the the OS MVT Compilers which implement FORTRAN IV as described
-    in the manual:-
+    in the manual:
  
-        IBM System/360 FORTRAN IV Language, Form C28-6515
+         IBM System/360 FORTRAN IV Language, Form C28-6515
  
-    This, along with the other relevant manuals may be downloaded from:-
+    This, along with the other relevant manuals may be downloaded from:
  
-               http://bitsavers.org/pdf/ibm/360/fortran/
+         http://bitsavers.org/pdf/ibm/360/fortran/
  
 2.  When running FORTRAN programs by default all IO takes place to CMS disk
-    files of the form :-
+    files of the form :
  
-          FILE     FTnnF001   A
+         FILE     FTnnF001   A
  
     where "nn" is the stream number in the program. If you wish to do IO to a
     specified file or device issue a FILEDEF referencing DD name FTnnF001.
-    For example entering
+    For example entering:
  
           FILEDEF FT06F001 TERM
  
@@ -116,6 +115,5 @@ Usage Notes
     programs and must be referenced in a GLOBAL TXTLIB command before issuing
     a LOAD or INCLUDE command.
  
-5.  VM Community edition also includes the WATFIV compiler.
+5.  The VM/370 Community Edition also includes the WATFIV compiler.
     See HELP WATFIV for more information.
- 

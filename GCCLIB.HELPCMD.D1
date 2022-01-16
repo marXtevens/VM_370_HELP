@@ -48,8 +48,9 @@ This means it is now possible to write programs that execute in the 8K CMS
 transient area, and can be called in CMS Subset mode from within EDIT or other
 programs.  Type HELP RESLIB for more information.
  
-In the VM/370 Sixpack version 1.2 the GCCLIB runtime library is automatically
-loaded into CMS resident memory during CMS initialization.
+In the VM/370 Sixpack version 1.2, VM/370 CE V1R1M1, and following, the GCCLIB
+runtime library is automatically loaded into CMS resident memory during CMS
+initialization.
  
  
 Using GCCLIB

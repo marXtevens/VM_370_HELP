@@ -1,13 +1,10 @@
 EXECUTIL                                                             CMS MODULE
  
-EXECUTIL - Puts information about the CP and CMS environment on the stack.
- 
-Format:-
- 
-+-----------------------------------------------------------------------------+
-| EXECUTIL function <options>
-+-----------------------------------------------------------------------------+
-| Functions:-                                                                 |
+Places information about the CP and CMS environment on the stack.
++----------+------------------------------------------------------------------+
+| EXECUTIL | function <options>                                               |
++----------+------------------------------------------------------------------+
+| Functions:                                                                  |
 |                                                                             |
 |  FREEADDR - unused virtual addresses                                        |
 |  FREEMODE - unused disk mode letters                                        |
@@ -21,7 +18,7 @@ Format:-
 |  TYPE     - type lines at the terminal                                      |
 |  WRITE    - write records to CMS disk files                                 |
 |                                                                             |
-| Options:-                                                                   |
+| Options:                                                                    |
 |                                                                             |
 |  See the desription of each function below for details of the options       |
 |                                                                             |
@@ -29,11 +26,11 @@ Format:-
 |  There is no "(" between the funcion and the options                        |
 +-----------------------------------------------------------------------------+
  
-Functions:-
+Functions:
  
 FREADDR
  
-Syntax:-
+Syntax:
 EXECUTIL FREEADDR [ cuu 191 [ n 1 ] ]
  
 The FREEADDR function stacks (LIFO) a single line containing the next 'n'

@@ -1,4 +1,6 @@
-FORTRANH - Calls the IBM MVT Fortran H Compiler                        MODULES
+FORTRANH                                                                MODULES
  
-    See HELP FORTRAN for details of using the G and H compilers.
+Use the FORTRANH command to invoke the OS FORTRAN H Complier. Then
+use the LOAD and START commands to run the programs.
  
+See HELP FORTRAN for details of using the G and H compilers.

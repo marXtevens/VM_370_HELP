@@ -42,7 +42,7 @@ Usage Notes:
                                                                          :
        FILEDEF TEST DISK TEST DATA A (LRECL 80 RECFM V
  
-    would access the same data.
+    would access the same data. Type HELP PDPCLIB for more information.
  
 3.  The source code for the GCC compiler and runtime libraries is on the
     GCCCMS userid disks.

@@ -56,9 +56,9 @@ LIB fn   specifies the runtime library with which the program is to be
 OS|CMS   OS is shorthand for LIB PDPCLIB.  CMS is shorthand for LIB GCCLIB.
  
 PARM fn  specifies a file of type PARM containg arguments to pass to GCC.  By
-         default 'GCC PARM *' is used.
+         the default file 'GCC PARM *' is used.
  
-Notes:-
+Notes:
  
          1. The GCC compiler is V3.2.3 and so is missing some features modern
             code relies on.
@@ -74,12 +74,9 @@ Notes:-
  
          4. The include (<xxx.h>) files are specific to to the compiler.
             This for PDPCLIB are on the GCCCMS 201 disk, those for GCCLIB
-            on the 202. The GCC EXEC links and accesses the appropriate
+            on the GCCCMS 202. The GCC EXEC links and accesses the appropriate
             before calling the compiler.
  
  For more information on PDPCLIB and GCC see the project web site at:-
  
                    https://gccmvs.sourceforge.net/
- 
- 
- 

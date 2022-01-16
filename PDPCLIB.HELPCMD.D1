@@ -48,11 +48,11 @@ PDPCLIB - An implemention of the C90 Library for GCC
  
     The DD names used are of the form "PDP<00000>" and these may
     appear in error messages. If you wish to issue your own FIELDEF
-    commands use a filename of the form:-
+    commands use a filename of the form:
  
      "DD:<ddname>"
  
-    and PDPCLIB will not issue a FILEDEF but exct a DD of <ddname>
+    and PDPCLIB will not issue a FILEDEF, but expect a DD of <ddname>
     to exist. This allows non-disk files such as tapes and printers
     to be accessed.
  

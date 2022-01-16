@@ -9,17 +9,17 @@ The format of the COBOL command is
 |   COBOL    | filename                                                       |
 +------------+----------------------------------------------------------------+
  
-where:-
+where:
  
-filename
- Is the name of a file with filetype COBOL and fixed length 80 byte records.
+filename  Is the name of a file with filetype COBOL and fixed length 80 byte
+          records.
  
-Options:-
+Options:
  
 The command does not accept any options but passes the following options to
-the COBOL compiler:-
+the COBOL compiler:
  
-Notes:-
+Notes:
  
 1.  The compiler outputs two files "filename TEXT" containing the generated
     object code, and "filename LISTING" which contains the compiler listing
@@ -27,4 +27,3 @@ Notes:-
  
 2.  The COBOL runtime is contained in "COB360 TXTLIB Y". Issue a GLOBAL TXTLIB
     referencing this file before loading a cobol program.
- 
