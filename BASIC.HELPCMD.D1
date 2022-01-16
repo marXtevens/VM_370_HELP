@@ -1,0 +1,20 @@
+BASIC - Runs CALL-OS basic as supplied with VM/370 R1
+ 
+Format:-
+ 
+BASIC fn (<LONG>
+ 
+Where:-
+ 
+      fn      Is the name of the file to be run. It must have a type of BASIC.
+ 
+      LONG    Tells BASIC to use LONG form numbers.
+ 
+For more details see
+ 
+GC20-1803-1 VM370 BASIC Language Reference Manual Rel 1
+ 
+which may be downloaded from BITSAVERS in the folder
+ 
+http://bitsavers.org/pdf/ibm/370/VM_370/Release_1/
+ 

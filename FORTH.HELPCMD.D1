@@ -1,0 +1,10 @@
+FORTH                                                                CMS COMMAND
+ 
+Invokes the FORTH compiler.
+ 
+On loading FORTH it will attemp to load your extensions from FORTH $PROG$ A.
+If this file does not exist it prints and error.
+ 
+To exit forth type "END" in FORTH
+ 
+See type .HELP in FORTH for more information.

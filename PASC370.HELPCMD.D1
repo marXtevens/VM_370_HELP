@@ -1,0 +1,18 @@
+PASC370                                                                CMS EXEC
+ 
+The PASC370 exec is used to convert PASCAL P-CODE into IBM 370 object code
+The format of the command is
+ 
++---------------------------------------------------------------------------+
+| PASC370 filename                                                          |
++---------------------------------------------------------------------------+
+ 
+Where:-
+ 
+filename
+ 
+The name of the file to be compiled. It must have a filetype of "PCODE"
+ 
+The outputs is a loadable TEXT file and a listing of type LIST002
+ 
+ 

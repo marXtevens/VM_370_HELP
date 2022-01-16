@@ -1,0 +1,17 @@
+PLCT - Runs the Cornell Student PL/1 compiler.                      CMS MODULE
+ 
+The PLCT command runs the Cornell PL/1 Compile and Go compiler.
+ 
+Format:-
+ 
++--------------------------------------------------------------------------+
+| PLCT fn <ft <fm>>  <(options>                                            |
++--------------------------------------------------------------------------+
+ 
+Notes:-
+ 
+1. The filetype defaults to PLC rather than PL1
+ 
+2. The options are documented in the PLCTINFO LISTING U
+ 
+ 
