@@ -1,5 +1,0 @@
- HEXDUMP - Dump a file in HEX -                                    CMS MODULE
- 
-Format:-
- 
-  HEXDUMP filename.filetype<.filemode> <start <end>>
