@@ -25,5 +25,5 @@ Notes:
     object code, and "filename LISTING" which contains the compiler listing
     including diagnostic messages.
  
-2.  The COBOL runtime is contained in "COB360 TXTLIB Y". Issue a GLOBAL TXTLIB
+2.  The COBOL runtime is contained in "COB360R TXTLIB Y". Issue a GLOBAL TXTLIB
     referencing this file before loading a cobol program.
